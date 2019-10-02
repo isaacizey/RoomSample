@@ -1,6 +1,7 @@
 # RoomSample
 
-[![Build Status](https://travis-ci.org/isaacizey/RoomSample.svg?branch=master)](https://travis-ci.org/isaacizey/RoomSample)
+[![Build Status](https://travis-ci.org/isaacizey/RoomSample.svg?branch=master)](https://travis-ci.org/isaacizey/RoomSample) 
+[![Coverage Status](https://coveralls.io/repos/github/isaacizey/RoomSample/badge.svg?branch=master)](https://coveralls.io/github/isaacizey/RoomSample?branch=master)
 
 This project is a sample implementation of room database in android for a tutorial medium post. 
 ### Application Structure 
