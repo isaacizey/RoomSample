@@ -8,9 +8,7 @@ import android.support.annotation.NonNull;
 @Entity(tableName = "word_table")
 public class Word {
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-
+    @PrimaryKey
     @NonNull
     @ColumnInfo(name = "word")
     private String mWord;
@@ -18,14 +16,9 @@ public class Word {
     @ColumnInfo(name = "location")
     private String mLocation;
 
-    public Word(int id, @NonNull String word, String location) {
-        this.id = id;
+    public Word(@NonNull String word, String location) {
         this.mWord = word;
         this.mLocation = location;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getWord() {

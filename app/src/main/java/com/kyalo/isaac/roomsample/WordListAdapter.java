@@ -5,17 +5,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import java.util.List;
 
 public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter
-        .WordViewHolder> implements AdapterView.OnItemClickListener {
+        .WordViewHolder> {
 
     private final LayoutInflater mInflater;
     private List<Word> mWords; // Cached copy of words
-    static  int dataSize;
 
     WordListAdapter(Context context) { mInflater = LayoutInflater
             .from(context); }
@@ -48,16 +46,9 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter
     // mWords has not been updated (means initially, it's null, and we can't return null).
     @Override
     public int getItemCount() {
-        if (mWords != null) {
-            dataSize = mWords.size();
+        if (mWords != null)
             return mWords.size();
-        }
         else return 0;
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
     }
 
     class WordViewHolder extends RecyclerView.ViewHolder {
@@ -74,10 +65,4 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter
     public Word getWordAtPosition (int position) {
         return mWords.get(position);
     }
-
-    public static int itemsize()
-    {
-        return dataSize;
-    }
-
 }
