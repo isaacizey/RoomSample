@@ -1,4 +1,7 @@
 # RoomSample
+
+[![Build Status](https://travis-ci.org/isaacizey/RoomSample.svg?branch=master)](https://travis-ci.org/isaacizey/RoomSample)
+
 This project is a sample implementation of room database in android for a tutorial medium post. 
 ### Application Structure 
 This application is created with android studio  
