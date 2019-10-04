@@ -15,12 +15,13 @@ jdk: oraclejdk8
 
 
 
-before_install:
+ before_install:
 - chmod +x gradlew
 
   branches:
     only:
     - master
 
+ 
 
  
