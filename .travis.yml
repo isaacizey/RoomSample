@@ -1,6 +1,6 @@
 language: android
-android:
-components:
+sudo: required
+jdk: oraclejdk8
 # Uncomment the lines below if you want to
 # use the latest revision of Android SDK Tools
  - platform-tools
@@ -17,6 +17,10 @@ components:
 
 before_install:
 - chmod +x gradlew
+
+  branches:
+    only:
+    - master
 
 
  
